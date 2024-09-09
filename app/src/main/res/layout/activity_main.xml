@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time: 10:00"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question goes here"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/answerRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/answer1RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer 1" />
+
+        <RadioButton
+            android:id="@+id/answer2RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer 2" />
+
+        <RadioButton
+            android:id="@+id/answer3RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer 3" />
+
+        <RadioButton
+            android:id="@+id/answer4RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer 4" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/prevButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next" />
+
+        <Button
+            android:id="@+id/showAnswerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Answer" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/endExamButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Exam"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/endTextView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="TextView" />
+
+</LinearLayout>
